@@ -1,5 +1,6 @@
 ansible_connection: winrm
 ansible_port: 5985
 ansible_winrm_transport: basic
+ansible_winrm_message_encryption: always
 ansible_user: "{{ lookup('env', 'WINDOWS_USERNAME') }}"
 ansible_password: "{{ lookup('env', 'WINDOWS_PASSWORD') }}"
